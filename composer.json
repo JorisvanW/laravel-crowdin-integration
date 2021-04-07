@@ -9,9 +9,9 @@
   "type": "library",
   "require": {
     "php": "^7.2",
-    "laravel/framework": "^8.0",
+    "laravel/framework": "^6.0|^7.0|^8.0",
     "elkuku/crowdin-api": "@dev",
-    "zanysoft/laravel-zip": "^1.0"
+    "zanysoft/laravel-zip": "dev-master"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.5",
