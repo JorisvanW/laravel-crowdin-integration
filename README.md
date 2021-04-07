@@ -4,7 +4,7 @@ Automate uploading/downloading translations
 
 Install the package via composer:
 
-```composer require macpaw/laravel-crowdin-integration --dev```
+```composer require georgii-web/laravel-crowdin-integration --dev```
 
 By default, the package uses the following environment variables
 ```
