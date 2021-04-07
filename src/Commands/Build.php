@@ -37,7 +37,7 @@ class Build extends BaseCommand
 
         $response = $crowdin->translation->export();
         $body = $this->xml2array(simplexml_load_string($response->getBody()->getContents()));
-        $status = isset($body['@attributes']) && isset($body['@attributes']['status']) ? $body['@attributes']['status'] : null;
+        $status = (isset($body['@attributes']) && isset($body['@attributes']['status'])) ? $body['@attributes']['status'] : null;
 
         if (!in_array($status, [self::BUILD_STATUS_BUILT, self::BUILD_STATUS_SKIPPED])) {
             $this->error("Something went wrong!\n The package cannot be built now...");
