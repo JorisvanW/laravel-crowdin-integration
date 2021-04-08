@@ -22,6 +22,22 @@ php artisan vendor:publish --provider="MacPaw\LaravelCrowdinIntegration\CrowdinS
 
 After that, `config/crowdin.php` will be created. Inside this file you will find all the fields that can be edited in this package.
 
+## Full scenario
+Add/update lang-file from "/resources/lang/en/{file}" to crowdin.com, translate and <b>approve</b> rows there, download translates to the projects "/resources/lang/{language}/{file}".
+### Commands
+```
+php artisan crowdin:add/update default.php
+```
+Translate and approve it on the crowdin.com
+```
+php artisan crowdin:download
+```
+Check translation in "/resources/lang/{language}/default.php"
+
+### FYI
+> If row was deleted in file, after update it'll be deleted in crowdin.com too.
+> Only approved rows wil be downloaded to the project.
+
 ## Usage
 
 You can see all the commands in the list of command:
