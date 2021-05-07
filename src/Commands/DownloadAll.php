@@ -32,12 +32,12 @@ class DownloadAll extends BaseCommand
         parent::__construct();
 
         $projectId = config('crowdin.project_id');
-        if ($projectId === null || str_len($projectId) < 5) {
+        if ($projectId === null || strlen($projectId) < 5) {
             throw new Exception('Project id not set');
         }
         
         $apiKey = config('crowdin.api_key');
-        if ($apiKey === null || str_len($apiKey) < 5) {
+        if ($apiKey === null || strlen($apiKey) < 5) {
             throw new Exception('API key not set');
         }
         
