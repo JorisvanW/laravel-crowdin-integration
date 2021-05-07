@@ -41,7 +41,7 @@ class DownloadAll extends BaseCommand
             throw new Exception('API key not set');
         }
         
-        $this->crowdin = new Crowdin($projectId, $apiKey));
+        $this->crowdin = new Crowdin($projectId, $apiKey);
     }
 
     /**
