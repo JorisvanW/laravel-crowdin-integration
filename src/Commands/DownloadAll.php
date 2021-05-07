@@ -31,7 +31,7 @@ class DownloadAll extends BaseCommand
     {
         parent::__construct();
 
-        $this->crowdin = new Crowdin(config('crowdin.project_id'), config('crowdin.api_key'));
+        $this->crowdin = new Crowdin(config('crowdin.project_id', ''), config('crowdin.api_key', ''));
     }
 
     /**
