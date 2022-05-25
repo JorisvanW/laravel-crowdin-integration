@@ -11,7 +11,7 @@
     "php": "^7.2|^8.0",
     "laravel/framework": "^6.0|^7.0|^8.0",
     "georgii-web/crowdin-api": "^3.0.1",
-    "zanysoft/laravel-zip": "dev-master"
+    "zanysoft/laravel-zip": "^1.0.4"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.5",
